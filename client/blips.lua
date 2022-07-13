@@ -3,7 +3,7 @@ RegisterNetEvent("qb-radialmenu:client:togglegas", function()
 	local closest = 1500
 	local closestLocation
 
-	for k,v in pairs(Config.GasStations) do
+	for _, v in pairs(Config.GasStations) do
 		local dist = GetDistanceBetweenCoords(coords, v)
 
 		if dist < closest then
@@ -20,7 +20,7 @@ RegisterNetEvent("qb-radialmenu:client:togglebarber", function()
 	local closest = 1500
 	local closestLocation
 
-	for k,v in pairs(Config.BarberShops) do
+	for _, v in pairs(Config.BarberShops) do
 		local dist = GetDistanceBetweenCoords(coords, v)
 		if dist < closest then
 			closest = dist
@@ -36,7 +36,7 @@ RegisterNetEvent("qb-radialmenu:client:toggleclothing", function()
 	local closest = 1500
 	local closestLocation
 
-	for k,v in pairs(Config.Clothing) do
+	for _, v in pairs(Config.Clothing) do
 		local dist = GetDistanceBetweenCoords(coords, v)
 		if dist < closest then
 			closest = dist
@@ -52,7 +52,7 @@ RegisterNetEvent("qb-radialmenu:client:togglegun", function()
 	local closest = 1500
 	local closestLocation
 
-	for k,v in pairs(Config.Gun) do
+	for _, v in pairs(Config.Gun) do
 		local dist = GetDistanceBetweenCoords(coords, v)
 		if dist < closest then
 			closest = dist
@@ -68,7 +68,7 @@ RegisterNetEvent("qb-radialmenu:client:togglestores", function()
 	local closest = 1500
 	local closestLocation
 
-	for k,v in pairs(Config.Stores) do
+	for _, v in pairs(Config.Stores) do
 		local dist = GetDistanceBetweenCoords(coords, v)
 		if dist < closest then
 			closest = dist
@@ -84,7 +84,7 @@ RegisterNetEvent("qb-radialmenu:client:toggleyoutool", function()
 	local closest = 1500
 	local closestLocation
 
-	for k,v in pairs(Config.Youtool) do
+	for _, v in pairs(Config.Youtool) do
 		local dist = GetDistanceBetweenCoords(coords, v)
 		if dist < closest then
 			closest = dist
@@ -100,7 +100,7 @@ RegisterNetEvent("qb-radialmenu:client:togglebenny", function()
 	local closest = 1500
 	local closestLocation
 
-	for k,v in pairs(Config.Benny) do
+	for _, v in pairs(Config.Benny) do
 		local dist = GetDistanceBetweenCoords(coords, v)
 		if dist < closest then
 			closest = dist
